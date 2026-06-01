@@ -1,0 +1,17 @@
+C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.registro.resources
+C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.Properties.Resources.resources
+C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.csproj.GenerateResource.cache
+C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.AssemblyInfoInputs.cache
+C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.AssemblyInfo.cs
+C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.csproj.CoreCompileInputs.cache
+C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\bin\Debug\net10.0-windows\Crear_Registrar.exe
+C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\bin\Debug\net10.0-windows\Crear_Registrar.deps.json
+C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\bin\Debug\net10.0-windows\Crear_Registrar.runtimeconfig.json
+C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\bin\Debug\net10.0-windows\Crear_Registrar.dll
+C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\bin\Debug\net10.0-windows\Crear_Registrar.pdb
+C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.dll
+C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\refint\Crear_Registrar.dll
+C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.pdb
+C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.genruntimeconfig.cache
+C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\ref\Crear_Registrar.dll
