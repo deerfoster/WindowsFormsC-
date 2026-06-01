@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\xaria\\source\\repos\\Crear_Registrar\\Crear_Registrar\\Crear_Registrar.csproj": {}
+    "C:\\Users\\xaria\\source\\repos\\WindowsFormsC-\\Crear_Registrar\\Crear_Registrar\\Crear_Registrar.csproj": {}
   },
   "projects": {
-    "C:\\Users\\xaria\\source\\repos\\Crear_Registrar\\Crear_Registrar\\Crear_Registrar.csproj": {
+    "C:\\Users\\xaria\\source\\repos\\WindowsFormsC-\\Crear_Registrar\\Crear_Registrar\\Crear_Registrar.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\xaria\\source\\repos\\Crear_Registrar\\Crear_Registrar\\Crear_Registrar.csproj",
+        "projectUniqueName": "C:\\Users\\xaria\\source\\repos\\WindowsFormsC-\\Crear_Registrar\\Crear_Registrar\\Crear_Registrar.csproj",
         "projectName": "Crear_Registrar",
-        "projectPath": "C:\\Users\\xaria\\source\\repos\\Crear_Registrar\\Crear_Registrar\\Crear_Registrar.csproj",
+        "projectPath": "C:\\Users\\xaria\\source\\repos\\WindowsFormsC-\\Crear_Registrar\\Crear_Registrar\\Crear_Registrar.csproj",
         "packagesPath": "C:\\Users\\xaria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\xaria\\source\\repos\\Crear_Registrar\\Crear_Registrar\\obj\\",
+        "outputPath": "C:\\Users\\xaria\\source\\repos\\WindowsFormsC-\\Crear_Registrar\\Crear_Registrar\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
