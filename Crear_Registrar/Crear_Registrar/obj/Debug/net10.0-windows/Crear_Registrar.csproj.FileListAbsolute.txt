@@ -57,3 +57,4 @@ C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Reg
 C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.genruntimeconfig.cache
 C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\ref\Crear_Registrar.dll
 >>>>>>> 9b2afa2dded739c87c203579fa6b9a336ced2d76
+C:\Users\Eduardo A. Hernandez\Desktop\proyecto 2\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.EditarRegistro.resources

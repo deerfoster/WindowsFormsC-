@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Crear_Registrar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c366f2171478025f1790d6c2f0e757624449b5f5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf9a1f6fbc7c101afa2e3b12a170f11340af8201")]
 [assembly: System.Reflection.AssemblyProductAttribute("Crear_Registrar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Crear_Registrar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

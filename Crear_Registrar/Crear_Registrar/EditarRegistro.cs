@@ -7,12 +7,36 @@ namespace Crear_Registrar
 {
     public partial class EditarRegistro : Form
     {
+        // Variable para guardar el índice del usuario que se está editando
+        private int indiceUsuario;
+
+        // Constructor ORIGINAL (sin parámetros) - lo dejamos igual
         public EditarRegistro()
         {
             InitializeComponent();
             CargarListaEnDataGridView();
             CargarUsuariosEnComboBox();
             ConfigurarEventoEdad();
+        }
+
+        // NUEVO CONSTRUCTOR: Recibe el usuario y su índice para editarlo directamente
+        public EditarRegistro(Registro usuarioSeleccionado, int indice)
+        {
+            InitializeComponent();
+
+            // Guardar el índice
+            indiceUsuario = indice;
+
+            // Cargar los datos del usuario en los campos
+            CargarDatosEnCampos(usuarioSeleccionado);
+
+            // Configurar el resto
+            CargarListaEnDataGridView();
+            CargarUsuariosEnComboBox();
+            ConfigurarEventoEdad();
+
+            // Sincronizar el comboBox con el usuario seleccionado
+            comboBoxSeleccionarUsuario.SelectedItem = usuarioSeleccionado;
         }
 
         // Configurar el evento de cambio de fecha para calcular edad
@@ -28,14 +52,25 @@ namespace Crear_Registrar
             dataGridViewUsuarios.DataSource = MemoriaClase.Memoria.Instancia.listaRegistros.ToList();
 
             // Configurar columnas (opcional - para mejor visualización)
-            dataGridViewUsuarios.Columns["Username"].HeaderText = "Usuario";
-            dataGridViewUsuarios.Columns["Nombre"].HeaderText = "Nombre";
-            dataGridViewUsuarios.Columns["Apellido"].HeaderText = "Apellido";
-            dataGridViewUsuarios.Columns["Telefono"].HeaderText = "Teléfono";
-            dataGridViewUsuarios.Columns["Genero"].HeaderText = "Género";
-            dataGridViewUsuarios.Columns["Estado"].HeaderText = "Estado Civil";
-            dataGridViewUsuarios.Columns["Edad"].HeaderText = "Edad";
-            dataGridViewUsuarios.Columns["Fecha"].HeaderText = "Fecha Nac.";
+            if (dataGridViewUsuarios.Columns.Count > 0)
+            {
+                if (dataGridViewUsuarios.Columns.Contains("Username"))
+                    dataGridViewUsuarios.Columns["Username"].HeaderText = "Usuario";
+                if (dataGridViewUsuarios.Columns.Contains("Nombre"))
+                    dataGridViewUsuarios.Columns["Nombre"].HeaderText = "Nombre";
+                if (dataGridViewUsuarios.Columns.Contains("Apellido"))
+                    dataGridViewUsuarios.Columns["Apellido"].HeaderText = "Apellido";
+                if (dataGridViewUsuarios.Columns.Contains("Telefono"))
+                    dataGridViewUsuarios.Columns["Telefono"].HeaderText = "Teléfono";
+                if (dataGridViewUsuarios.Columns.Contains("Genero"))
+                    dataGridViewUsuarios.Columns["Genero"].HeaderText = "Género";
+                if (dataGridViewUsuarios.Columns.Contains("Estado"))
+                    dataGridViewUsuarios.Columns["Estado"].HeaderText = "Estado Civil";
+                if (dataGridViewUsuarios.Columns.Contains("Edad"))
+                    dataGridViewUsuarios.Columns["Edad"].HeaderText = "Edad";
+                if (dataGridViewUsuarios.Columns.Contains("Fecha"))
+                    dataGridViewUsuarios.Columns["Fecha"].HeaderText = "Fecha Nac.";
+            }
         }
 
         // Cargar los usernames en el ComboBox
@@ -54,6 +89,8 @@ namespace Crear_Registrar
             {
                 var registro = (Registro)comboBoxSeleccionarUsuario.SelectedItem;
                 CargarDatosEnCampos(registro);
+                // Actualizar el índice también
+                indiceUsuario = MemoriaClase.Memoria.Instancia.listaRegistros.IndexOf(registro);
             }
         }
 
@@ -67,6 +104,7 @@ namespace Crear_Registrar
 
                 // Sincronizar ComboBox
                 comboBoxSeleccionarUsuario.SelectedItem = registro;
+                indiceUsuario = e.RowIndex;
             }
         }
 
@@ -119,21 +157,6 @@ namespace Crear_Registrar
 
             textBoxEdad.Text = calculo_Edad.ToString();
         }
-
-        // Botón Cargar Manual
-        private void btnCargar_Click(object sender, EventArgs e)
-        {
-            if (comboBoxSeleccionarUsuario.SelectedItem != null)
-            {
-                var registro = (Registro)comboBoxSeleccionarUsuario.SelectedItem;
-                CargarDatosEnCampos(registro);
-            }
-            else
-            {
-                MessageBox.Show("Seleccione un usuario primero.", "Aviso");
-            }
-        }
-
         // Validar datos (similar al registro)
         private bool ValidarDatos()
         {
@@ -180,9 +203,28 @@ namespace Crear_Registrar
 
             return true;
         }
+        private void buttonLimpiar_Click(object sender, EventArgs e)
+        {
+            textNombre.Clear();
+            textApellido.Clear();
+            textDireccion.Clear();
+            maskedTextTelefono.Text = "";
+            comboBoxGenero.SelectedIndex = 0;
+            dtpFechaNacimiento.Value = DateTime.Now;
+            comboBoxEstado.SelectedIndex = 0;
+            textBoxEdad.Clear();
+        }
 
-        // Botón Actualizar (GUARDAR CAMBIOS)
-        private void btnActualizar_Click(object sender, EventArgs e)
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Está seguro de que desea salir?", "Confirmación",
+               MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void buttonActualizar_Click(object sender, EventArgs e)
         {
             if (!ValidarDatos())
                 return;
@@ -217,27 +259,17 @@ namespace Crear_Registrar
             }
         }
 
-        // Botón Limpiar
-        private void btnLimpiar_Click(object sender, EventArgs e)
+        private void buttonCargar_Click(object sender, EventArgs e)
         {
-            textUsername.Clear();
-            textNombre.Clear();
-            textApellido.Clear();
-            textDireccion.Clear();
-            maskedTextTelefono.Text = "";
-            comboBoxGenero.SelectedIndex = 0;
-            dtpFechaNacimiento.Value = DateTime.Now;
-            comboBoxEstado.SelectedIndex = 0;
-            textBoxEdad.Clear();
-        }
 
-        // Botón Cancelar
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("¿Está seguro de que desea salir?", "Confirmación",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (comboBoxSeleccionarUsuario.SelectedItem != null)
             {
-                this.Close();
+                var registro = (Registro)comboBoxSeleccionarUsuario.SelectedItem;
+                CargarDatosEnCampos(registro);
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un usuario primero.", "Aviso");
             }
         }
     }
