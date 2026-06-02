@@ -1,17 +1,28 @@
+using System;
+using System.Windows.Forms;
+
 namespace Crear_Registrar
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
+            // Manejador de errores global - SILENCIOSO (no muestra nada)
+            Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
+            Application.ThreadException += (s, e) =>
+            {
+                // No hacer nada - el error se ignora silenciosamente
+                // El programa sigue funcionando sin mostrar ventana
+            };
+
+            AppDomain.CurrentDomain.UnhandledException += (s, e) =>
+            {
+                // No hacer nada - error silencioso
+            };
+
             ApplicationConfiguration.Initialize();
-            Application.Run(new registro());
+            Application.Run(new MenuPrincipal());
         }
     }
 }
