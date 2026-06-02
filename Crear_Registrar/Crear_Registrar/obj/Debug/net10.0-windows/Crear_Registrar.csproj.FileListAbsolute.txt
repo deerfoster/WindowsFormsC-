@@ -15,6 +15,7 @@ C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-wi
 C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.pdb
 C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.genruntimeconfig.cache
 C:\Users\xaria\source\repos\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\ref\Crear_Registrar.dll
+<<<<<<< HEAD
 C:\Users\Eduardo A. Hernandez\Desktop\proyecto 2\Crear_Registrar\Crear_Registrar\bin\Debug\net10.0-windows\Crear_Registrar.exe
 C:\Users\Eduardo A. Hernandez\Desktop\proyecto 2\Crear_Registrar\Crear_Registrar\bin\Debug\net10.0-windows\Crear_Registrar.deps.json
 C:\Users\Eduardo A. Hernandez\Desktop\proyecto 2\Crear_Registrar\Crear_Registrar\bin\Debug\net10.0-windows\Crear_Registrar.runtimeconfig.json
@@ -35,3 +36,24 @@ C:\Users\Eduardo A. Hernandez\Desktop\proyecto 2\Crear_Registrar\Crear_Registrar
 C:\Users\Eduardo A. Hernandez\Desktop\proyecto 2\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.pdb
 C:\Users\Eduardo A. Hernandez\Desktop\proyecto 2\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.genruntimeconfig.cache
 C:\Users\Eduardo A. Hernandez\Desktop\proyecto 2\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\ref\Crear_Registrar.dll
+=======
+C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\bin\Debug\net10.0-windows\Crear_Registrar.exe
+C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\bin\Debug\net10.0-windows\Crear_Registrar.deps.json
+C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\bin\Debug\net10.0-windows\Crear_Registrar.runtimeconfig.json
+C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\bin\Debug\net10.0-windows\Crear_Registrar.dll
+C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\bin\Debug\net10.0-windows\Crear_Registrar.pdb
+C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.EditarRegistro.resources
+C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.registro.resources
+C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.Properties.Resources.resources
+C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.csproj.GenerateResource.cache
+C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.AssemblyInfoInputs.cache
+C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.AssemblyInfo.cs
+C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.csproj.CoreCompileInputs.cache
+C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.sourcelink.json
+C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.dll
+C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\refint\Crear_Registrar.dll
+C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.pdb
+C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\Crear_Registrar.genruntimeconfig.cache
+C:\Users\migue\OneDrive\Escritorio\pro2\WindowsFormsC-\Crear_Registrar\Crear_Registrar\obj\Debug\net10.0-windows\ref\Crear_Registrar.dll
+>>>>>>> 9b2afa2dded739c87c203579fa6b9a336ced2d76
